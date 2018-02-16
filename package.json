@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "mocha"
+    "test": "mocha",
+    "lint": "eslint *.js; exit 0"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,8 @@
   "homepage": "https://github.com/alvinberthelot/boilerplate-evaluations-node-js#readme",
   "devDependencies": {
     "chai": "4.1.2",
+    "eslint": "4.17.0",
+    "eslint-plugin-mocha": "4.11.0",
     "mocha": "5.0.1"
   },
   "dependencies": {
