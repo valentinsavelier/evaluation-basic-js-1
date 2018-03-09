@@ -4,7 +4,7 @@ var mapCustomer = program.run
 
 describe(`${program.title}`, function() {
   it('Function mapCustomer without an input should throw an error', function() {
-    expect(mapCustomer()).to.throw('A customer must be defined')
+    expect(mapCustomer).to.throw(Error, 'A customer must be defined')
   })
   it('Function mapCustomer with an empty object as input should return a particular object', function() {
     var input = {}
@@ -20,12 +20,12 @@ describe(`${program.title}`, function() {
     var input = {
       firstname: 'Jack',
       lastname: 'Smith',
-      products: [{ label: 'shoes', price: '89' }, { label: 'book', price: '14' }, { label: 'smartphone', price: '499' }]
+      products: [{ label: 'shoes', price: 89 }, { label: 'book', price: 14 }, { label: 'smartphone', price: 499 }]
     }
     var output = {
       firstname: 'Jack',
       lastname: 'Smith',
-      products: [{ label: 'shoes', price: '89' }, { label: 'book', price: '14' }, { label: 'smartphone', price: '499' }],
+      products: [{ label: 'shoes', price: 89 }, { label: 'book', price: 14 }, { label: 'smartphone', price: 499 }],
       moneySpent: 602
     }
     expect(mapCustomer(input)).to.be.eql(output)
@@ -34,12 +34,12 @@ describe(`${program.title}`, function() {
     var inputBefore = {
       firstname: 'Jack',
       lastname: 'Smith',
-      products: [{ label: 'shoes', price: '89' }, { label: 'book', price: '14' }, { label: 'smartphone', price: '499' }]
+      products: [{ label: 'shoes', price: 89 }, { label: 'book', price: 14 }, { label: 'smartphone', price: 499 }]
     }
     var inputAfter = {
       firstname: 'Jack',
       lastname: 'Smith',
-      products: [{ label: 'shoes', price: '89' }, { label: 'book', price: '14' }, { label: 'smartphone', price: '499' }]
+      products: [{ label: 'shoes', price: 89 }, { label: 'book', price: 14 }, { label: 'smartphone', price: 499 }]
     }
     mapCustomer(inputBefore)
     expect(inputBefore).to.be.eql(inputAfter)
