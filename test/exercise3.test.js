@@ -5,12 +5,12 @@ var applyMap = program.run
 describe(`${program.title}`, function() {
   it('Function applyMap without inputs should return an empty array', function() {
     var output = []
-    expect(applyMap()).to.be.equal(output)
+    expect(applyMap()).to.be.eql(output)
   })
   it('Function applyMap with inputValues but without inputMaps should return an empty array', function() {
     var inputValues = [5, 7, 18]
     var output = []
-    expect(applyMap(inputValues)).to.be.equal(output)
+    expect(applyMap(inputValues)).to.be.eql(output)
   })
   it('Function applyMap with inputValues and 1 inputMap should return an array with 1 sub array with values mapped', function() {
     var inputValues = [12, 26, 42]
