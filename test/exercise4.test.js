@@ -1,5 +1,6 @@
 var expect = require('chai').expect
-var i18nText = require('../src/exercise4').run
+var program = require('../src/exercise4')
+var i18nText = program.run
 
 describe(`${program.title}`, function() {
   it('Function i18nText without an input should throw an error', function() {

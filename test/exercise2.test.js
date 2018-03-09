@@ -1,5 +1,6 @@
 var expect = require('chai').expect
-var mapCustomer = require('../src/exercise2').run
+var program = require('../src/exercise2')
+var mapCustomer = program.run
 
 describe(`${program.title}`, function() {
   it('Function mapCustomer without an input should throw an error', function() {

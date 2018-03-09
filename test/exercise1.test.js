@@ -1,5 +1,6 @@
 var expect = require('chai').expect
-var removeNegativeValue = require('../src/exercise1').run
+var program = require('../src/exercise1')
+var removeNegativeValue = program.run
 
 describe(`${program.title}`, function() {
   it('Function removeNegativeValue without an input should return an empty array', function() {
