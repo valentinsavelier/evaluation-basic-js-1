@@ -4,17 +4,17 @@ var i18nText = program.run
 
 describe(`${program.title}`, function() {
   it('Function i18nText without an input should throw an error', function() {
-    expect(i18nText()).to.throw('A Text function is required')
+    expect(i18nText).to.throw(Error, 'A Text function is required')
   })
   it('Function i18nText with an input function and a value should return a function', function() {
-    var niceToSay = function(name) {
+    var niceToSay = function(text, name) {
       return name + ', you are ' + text + ' today'
     }
     var funnyToday = i18nText(niceToSay, 'funny')
     expect(funnyToday).to.be.a('function')
   })
   it('Function i18nText with an input function and a value should return a function which can be evaluated', function() {
-    var textToSay = function(name) {
+    var textToSay = function(text, name) {
       return text + ' ' + name
     }
     var inputLocaleFr = 'Bonjour'
