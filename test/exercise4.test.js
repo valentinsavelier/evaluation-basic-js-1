@@ -3,9 +3,6 @@ var program = require('../src/exercise4')
 var i18nText = program.run
 
 describe(`${program.title}`, function() {
-  it('Function i18nText without an input should throw an error', function() {
-    expect(i18nText).to.throw(Error, 'A Text function is required')
-  })
   it('Function i18nText with an input function and a value should return a function', function() {
     var niceToSay = function(text, name) {
       return name + ', you are ' + text + ' today'

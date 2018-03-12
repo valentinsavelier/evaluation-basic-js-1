@@ -3,9 +3,6 @@ var program = require('../src/exercise2')
 var mapCustomer = program.run
 
 describe(`${program.title}`, function() {
-  it('Function mapCustomer without an input should throw an error', function() {
-    expect(mapCustomer).to.throw(Error, 'A customer must be defined')
-  })
   it('Function mapCustomer with an empty object as input should return a particular object', function() {
     var input = {}
     var output = {
