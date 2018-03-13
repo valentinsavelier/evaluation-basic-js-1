@@ -12,7 +12,13 @@
     "type": "git",
     "url": "git+https://github.com/alvinberthelot/boilerplate-evaluations-node-js.git"
   },
-  "keywords": ["evaluation", "students", "nodejs", "node", "node-js"],
+  "keywords": [
+    "evaluation",
+    "students",
+    "nodejs",
+    "node",
+    "node-js"
+  ],
   "author": "Alvin Berthelot",
   "license": "ISC",
   "bugs": {
