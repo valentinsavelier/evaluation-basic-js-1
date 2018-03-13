@@ -1,5 +1,6 @@
-const run = () => {
-  return 'Everything seems fine to start evaluation'
+
+const run = function () {
+   return 'Everything seems fine to start evaluation'
 }
 
 module.exports = {
